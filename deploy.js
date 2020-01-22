@@ -70,7 +70,7 @@ function updateRemoteApp() {
   });
 }
 
-// restart mongodb and node services on the remote server
+// restart mongodb and node services on the remote server... confirm travis and github sync
 function restartRemoteServices() {
   return ssh.execCommand(
     'cd starter-node-angular && sudo service mongod start && pm2 start app.js', {
